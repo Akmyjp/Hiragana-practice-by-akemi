@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>隨機測試日文片假名</title>
+<title>隨機測試日文平假名</title>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 <style>
   body {
@@ -28,7 +28,7 @@
   }
 
   #kana {
-    font-size: 10rem;
+    font-size: 10rem; /* 中間文字變大 */
     color: #FF69B4;
     margin-bottom: 20px;
     z-index: 2;
@@ -135,8 +135,8 @@
 </head>
 <body>
   <div id="timer">--:--:--</div>
-  <h1>隨機測試日文片假名</h1>
-  <div id="kana">ア</div>
+  <h1>隨機測試日文平假名</h1>
+  <div id="kana">あ</div>
   
   <!-- 按鈕區 -->
   <div class="button-container">
@@ -155,21 +155,21 @@
   <footer>💖 日文老師 Akemi 敬上</footer>
 
   <audio id="bgMusic" autoplay loop>
-    <source src="220_BPM86.mp3" type="audio/mpeg">
+    <source src="456_BPM80.mp3" type="audio/mpeg">
   </audio>
 
 <script>
 const kanaList = [
-  "ア","イ","ウ","エ","オ",
-  "カ","キ","ク","ケ","コ",
-  "サ","シ","ス","セ","ソ",
-  "タ","チ","ツ","テ","ト",
-  "ナ","ニ","ヌ","ネ","ノ",
-  "ハ","ヒ","フ","ヘ","ホ",
-  "マ","ミ","ム","メ","モ",
-  "ヤ","ユ","ヨ",
-  "ラ","リ","ル","レ","ロ",
-  "ワ","ン"
+  "あ","い","う","え","お",
+  "か","き","く","け","こ",
+  "さ","し","す","せ","そ",
+  "た","ち","つ","て","と",
+  "な","に","ぬ","ね","の",
+  "は","ひ","ふ","へ","ほ",
+  "ま","み","む","め","も",
+  "や","ゆ","よ",
+  "ら","り","る","れ","ろ",
+  "わ","ん"
 ];
 
 const kanaDiv = document.getElementById("kana");
@@ -235,9 +235,9 @@ forgotButton.addEventListener("click", () => {
 
 showForgotButton.addEventListener("click", () => {
   if (forgottenKana.length === 0) {
-    alert("太棒了！你沒有沒記住的片假名 🎉");
+    alert("太棒了！你沒有沒記住的平假名 🎉");
   } else {
-    alert("沒記住的片假名:\n" + forgottenKana.join(" "));
+    alert("沒記住的平假名:\n" + forgottenKana.join(" "));
   }
 });
 
